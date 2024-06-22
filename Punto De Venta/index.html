@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>POS Donuts World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Productos</h2>
+                <div class="form-group">
+                    <input type="text" id="buscar-producto" class="form-control" placeholder="Buscar por nombre o código de barras">
+                    <button id="buscar-btn" class="btn btn-primary mt-2">Buscar</button>
+                </div>
+                <div id="lista-productos" class="list-group">
+                    <!-- Aquí se cargarán los productos desde la base de datos -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Carrito</h2>
+                <div id="lista-carrito" class="list-group">
+                    <!-- Aquí se mostrarán los productos añadidos al carrito -->
+                </div>
+                <div class="total mt-3">
+                    <h3>Total: $<span id="total">0.00</span></h3>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="nombre-cliente">Nombre del Cliente:</label>
+                    <input type="text" id="nombre-cliente" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="reseña-cliente">Reseña (Opcional):</label>
+                    <textarea id="reseña-cliente" class="form-control" rows="3"></textarea>
+                </div>
+                <button id="finalizar-venta" class="btn btn-success btn-block mt-3">Finalizar Venta</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
